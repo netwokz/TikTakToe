@@ -43,12 +43,15 @@ public class StatsDialog extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         View view = getActivity().getLayoutInflater().inflate(R.layout.stats, null);
-        mPrefs = PreferenceManager.getDefaultSharedPreferences(MyApp.getAppContext());
+        mPrefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
         mPrefsEditor = mPrefs.edit();
 
         AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(getActivity());
         initializeViews(view);
         mDialogBuilder.setView(view);
+
+        getStats();
+        updateStatViews();
 
         return mDialogBuilder.create();
     }

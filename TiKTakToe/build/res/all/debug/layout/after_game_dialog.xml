@@ -37,4 +37,4 @@
             style="?android:attr/buttonBarButtonStyle"
             android:textSize="20sp"
             android:id="@+id/btn_main_menu"/>
-</LinearLayout><!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/layout/after_game_dialog.xml -->
+</LinearLayout><!-- From: file:/D:/android/android-studio/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/layout/after_game_dialog.xml -->

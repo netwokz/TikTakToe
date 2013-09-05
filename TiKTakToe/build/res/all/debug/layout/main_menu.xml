@@ -34,4 +34,4 @@
             android:id="@+id/btn_exit"
             android:layout_gravity="center"
             android:background="@drawable/exit_game_button"/>
-</LinearLayout><!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/layout/main_menu.xml -->
+</LinearLayout><!-- From: file:/D:/android/android-studio/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/layout/main_menu.xml -->
