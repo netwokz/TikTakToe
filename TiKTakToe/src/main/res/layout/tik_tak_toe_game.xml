@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".TikTakToeGame">
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_table">
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/row_1">
+
+            <Button
+                    android:layout_width="@dimen/cell_size"
+                    android:layout_height="@dimen/cell_size"
+                    android:textSize="@dimen/cell_text_size"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:id="@+id/btn_1"/>
+
+            <Button
+                    android:layout_width="@dimen/cell_size"
+                    android:layout_height="@dimen/cell_size"
+                    android:textSize="@dimen/cell_text_size"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:id="@+id/btn_2"/>
+
+            <Button
+                    android:layout_width="@dimen/cell_size"
+                    android:layout_height="@dimen/cell_size"
+                    android:textSize="@dimen/cell_text_size"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:id="@+id/btn_3"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/row_2">
+
+            <Button
+                    android:layout_width="@dimen/cell_size"
+                    android:layout_height="@dimen/cell_size"
+                    android:textSize="@dimen/cell_text_size"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:id="@+id/btn_4"/>
+
+            <Button
+                    android:layout_width="@dimen/cell_size"
+                    android:layout_height="@dimen/cell_size"
+                    android:textSize="@dimen/cell_text_size"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:id="@+id/btn_5"/>
+
+            <Button
+                    android:layout_width="@dimen/cell_size"
+                    android:layout_height="@dimen/cell_size"
+                    android:textSize="@dimen/cell_text_size"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:id="@+id/btn_6"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/row_3">
+
+            <Button
+                    android:layout_width="@dimen/cell_size"
+                    android:layout_height="@dimen/cell_size"
+                    android:textSize="@dimen/cell_text_size"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:id="@+id/btn_7"/>
+
+            <Button
+                    android:layout_width="@dimen/cell_size"
+                    android:layout_height="@dimen/cell_size"
+                    android:textSize="@dimen/cell_text_size"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:id="@+id/btn_8"/>
+
+            <Button
+                    android:layout_width="@dimen/cell_size"
+                    android:layout_height="@dimen/cell_size"
+                    android:textSize="@dimen/cell_text_size"
+                    android:textColor="@android:color/holo_blue_bright"
+                    android:id="@+id/btn_9"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_info_header"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/cell_text_size"
+            android:text="@string/info"/>
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_human_header"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="@string/human"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ties_header"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="@string/ties"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_android_header"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="@string/android"/>
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_human_value"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textIsSelectable="false"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/tv_ties_value"
+                    android:textIsSelectable="false"
+                    android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/tv_android_value"
+                    android:textIsSelectable="false"
+                    android:layout_gravity="center_horizontal"/>
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

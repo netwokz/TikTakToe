@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TiK Tak Toe</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_human">You go first!</string>
+    <string name="turn_human">Your turn.</string>
+    <string name="turn_android">Android\'s turn.</string>
+    <string name="turn_player_one">Player One\'s Turn.</string>
+    <string name="turn_player_two">Player Two\'s Turn.</string>
+    <string name="result_tie">It\'s a tie!</string>
+    <string name="result_human_win">You Won!</string>
+    <string name="result_android_win">Android Won!</string>
+    <string name="result_player_one_wins">Player One Wins!</string>
+    <string name="result_player_two_wins">Player Two Wins!</string>
+    <string name="start_new_game">New Game!</string>
+    <string name="undo_move">Undo!</string>
+    <string name="human">Human:</string>
+    <string name="android">Android:</string>
+    <string name="player_one">Player One:</string>
+    <string name="player_two">Player Two:</string>
+    <string name="ties">Ties:</string>
+    <string name="you_won">Congratulations, you Won!</string>
+    <string name="you_lost">I\'m sorry, you Lost@#8230</string>
+    <string name="play_again">Play Again?</string>
+    <string name="main_menu">Main Menu</string>
+
+    <string name="total_time_spent_playing">Total time spent playing:</string>
+    <string name="total_games_played">Total games played:</string>
+    <string name="total_games_won">Total games won:</string>
+    <string name="total_games_lost">Total games lost:</string>
+
+    <string name="info">Info:</string>
+    <string name="contact_heading">Contact Info</string>
+    <string name="contact_info">
+        <b>Name:</b>
+        Steve Deane Jr.\n
+        <b>Email:</b>
+        wildmechanic@gmail.com
+    </string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_out">Sign Out</string>
+
+    <string name="pd_title">Login Service</string>
+    <string name="pd_message">Logging into Google Game Services</string>
+
+
+    <string name="gamehelper_sign_in_failed">Failed to sign in. Please check your network connection and try again.
+    </string>
+    <string name="gamehelper_app_misconfigured">The application is incorrectly configured. Check that the package name
+        and signing certificate match the client ID created in Developer Console. Also, if the application is not yet
+        published, check that the account you are trying to sign in with is listed as a tester account. See logs for
+        more information.
+    </string>
+    <string name="gamehelper_license_failed">License check failed.</string>
+    <string name="gamehelper_unknown_error">Unknown error.</string>
+
+    <string name="shared_prefs_connection_state">connection_state</string>
+</resources>

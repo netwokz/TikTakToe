@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="ActionBarSherlock">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../eclipse/libraries/ActionBarSherlock/library/src" />
+      <root url="file://$PROJECT_DIR$/../../../eclipse/libraries/ActionBarSherlock/library/test" />
+      <root url="file://$PROJECT_DIR$/../../../eclipse/libraries/ActionBarSherlock/samples/demos/src" />
+      <root url="file://$PROJECT_DIR$/../../../eclipse/libraries/ActionBarSherlock/samples/styled/src" />
+      <root url="file://$PROJECT_DIR$/../../../eclipse/libraries/ActionBarSherlock/samples/fragments/src" />
+      <root url="file://$PROJECT_DIR$/../../../eclipse/libraries/ActionBarSherlock/samples/roboguice/src" />
+      <root url="file://$PROJECT_DIR$/../../../eclipse/libraries/ActionBarSherlock/samples/known-bugs/src" />
+    </SOURCES>
+  </library>
+</component>

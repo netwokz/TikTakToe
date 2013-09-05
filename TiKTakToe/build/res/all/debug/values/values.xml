@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/values/color.xml -->
+    <color name="BLUE">#ff33b5e5</color>
+    <color name="BLUE_DARK">#ff0099cc</color>
+    <color name="BLUE_LIGHT">#ff00ddff</color>
+    <color name="RED">#ffff4444</color>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3136.aar/res/values/colors.xml -->
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_default_background">#FFDD4B39</color>
+    <color name="common_signin_btn_light_text_default">#FF737373</color>
+    <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_light_text_focused">#FF737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3136.aar/res/values/maps_attrs.xml -->
+    <declare-styleable name="MapAttrs">
+        <attr name="mapType"
+              format="enum">
+            <enum name="none"
+                  value="0"/>
+            <enum name="normal"
+                  value="1"/>
+            <enum name="satellite"
+                  value="2"/>
+            <enum name="terrain"
+                  value="3"/>
+            <enum name="hybrid"
+                  value="4"/>
+        </attr>
+        <attr name="cameraBearing"
+              format="float"/>
+        <attr name="cameraTargetLat"
+              format="float"/>
+        <attr name="cameraTargetLng"
+              format="float"/>
+        <attr name="cameraTilt"
+              format="float"/>
+        <attr name="cameraZoom"
+              format="float"/>
+        <attr name="uiCompass"
+              format="boolean"/>
+        <attr name="uiRotateGestures"
+              format="boolean"/>
+        <attr name="uiScrollGestures"
+              format="boolean"/>
+        <attr name="uiTiltGestures"
+              format="boolean"/>
+        <attr name="uiZoomControls"
+              format="boolean"/>
+        <attr name="uiZoomGestures"
+              format="boolean"/>
+        <attr name="useViewLifecycle"
+              format="boolean"/>
+        <attr name="zOrderOnTop"
+              format="boolean"/>
+    </declare-styleable>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/values/dimens.xml -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cell_size">100dp</dimen>
+    <dimen name="cell_text_size">30sp</dimen>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/values/games-ids.xml -->
+    <string name="achievement_first_time_for_everything">CgkIqYWIh6ASEAIQAQ</string>
+    <string name="achievement_not_bad">CgkIqYWIh6ASEAIQBA</string>
+    <string name="achievement_on_a_roll...">CgkIqYWIh6ASEAIQAw</string>
+    <string name="achievement_say_what">CgkIqYWIh6ASEAIQAg</string>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/values/strings.xml -->
+    <string name="action_settings">Settings</string>
+    <string name="android">Android:</string>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/values/games-ids.xml -->
+    <string name="app_id">627080037033</string>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/values/strings.xml -->
+    <string name="app_name">TiK Tak Toe</string>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3136.aar/res/values/strings.xml -->
+    <string name="auth_client_availability_notification_title">Install/Update/Enable Google Play services</string>
+    <string name="auth_client_play_services_err_notification_msg">Google Play services error</string>
+    <string name="auth_client_requested_by_msg">Requested by
+        <ns1:g id="app_name">%1$s</ns1:g>
+    </string>
+    <string name="common_google_play_services_enable_button"
+            msgid="2523291102206661146">Enable Google Play services
+    </string>
+    <string name="common_google_play_services_enable_text"
+            msgid="227660514972886228">This app won\'t work unless you enable Google Play services.
+    </string>
+    <string name="common_google_play_services_enable_title"
+            msgid="5122002158466380389">Enable Google Play services
+    </string>
+    <string name="common_google_play_services_install_button"
+            msgid="7153882981874058840">Get Google Play services
+    </string>
+    <string name="common_google_play_services_install_text_phone"
+            msgid="2122112764540849864">This app won\'t run without Google Play services, which are missing from your
+        phone.
+    </string>
+    <string name="common_google_play_services_install_text_tablet"
+            msgid="7351599665250191022">This app won\'t run without Google Play services, which are missing from your
+        tablet.
+    </string>
+    <string name="common_google_play_services_install_title"
+            msgid="7215213145546190223">Get Google Play services
+    </string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications
+        rely on, is not supported by your device. Please contact the manufacturer for assistance.
+    </string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string name="common_google_play_services_update_button"
+            msgid="6556509956452265614">Update
+    </string>
+    <string name="common_google_play_services_update_text"
+            msgid="9053896323427875356">This app won\'t run unless you update Google Play services.
+    </string>
+    <string name="common_google_play_services_update_title"
+            msgid="1788179980625863495">Update Google Play services
+    </string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/values/strings.xml -->
+    <string name="contact_heading">Contact Info</string>
+    <string name="contact_info">
+        <b>Name:</b>
+        Steve Deane Jr.\n
+        <b>Email:</b>
+        wildmechanic@gmail.com
+    </string>
+    <string name="first_human">You go first!</string>
+    <string name="gamehelper_app_misconfigured">The application is incorrectly configured. Check that the package name
+        and signing certificate match the client ID created in Developer Console. Also, if the application is not yet
+        published, check that the account you are trying to sign in with is listed as a tester account. See logs for
+        more information.
+    </string>
+    <string name="gamehelper_license_failed">License check failed.</string>
+    <string name="gamehelper_sign_in_failed">Failed to sign in. Please check your network connection and try again.
+    </string>
+    <string name="gamehelper_unknown_error">Unknown error.</string>
+    <string name="human">Human:</string>
+    <string name="info">Info:</string>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/values/games-ids.xml -->
+    <string name="leaderboard_games_played">CgkIqYWIh6ASEAIQBQ</string>
+    <string name="leaderboard_total_loses">CgkIqYWIh6ASEAIQBw</string>
+    <string name="leaderboard_total_wins">CgkIqYWIh6ASEAIQBg</string>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/build/exploded-bundles/ComGoogleAndroidGmsPlayServices3136.aar/res/values/strings.xml -->
+    <string name="location_client_ulr_inactive_age_under_13"
+            translatable="false">AgeUnder13
+    </string>
+    <string name="location_client_ulr_inactive_age_unknown"
+            translatable="false">AgeUnknown
+    </string>
+    <string name="location_client_ulr_inactive_unknown_restriction"
+            translatable="false">UnknownRestriction
+    </string>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/values/strings.xml -->
+    <string name="main_menu">Main Menu</string>
+    <string name="pd_message">Logging into Google Game Services</string>
+    <string name="pd_title">Login Service</string>
+    <string name="play_again">Play Again?</string>
+    <string name="player_one">Player One:</string>
+    <string name="player_two">Player Two:</string>
+    <string name="result_android_win">Android Won!</string>
+    <string name="result_human_win">You Won!</string>
+    <string name="result_player_one_wins">Player One Wins!</string>
+    <string name="result_player_two_wins">Player Two Wins!</string>
+    <string name="result_tie">It\'s a tie!</string>
+    <string name="shared_prefs_connection_state">connection_state</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="start_new_game">New Game!</string>
+    <string name="ties">Ties:</string>
+    <string name="turn_android">Android\'s turn.</string>
+    <string name="turn_human">Your turn.</string>
+    <string name="turn_player_one">Player One\'s Turn.</string>
+    <string name="turn_player_two">Player Two\'s Turn.</string>
+    <string name="undo_move">Undo!</string>
+    <string name="you_lost">I\'m sorry, you Lost@#8230</string>
+    <string name="you_won">Congratulations, you Won!</string>
+    <!-- From: file:/C:/Users/Stephen/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/values/styles.xml -->
+    <style name="AppBaseTheme"
+           parent="android:Theme">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme"
+           parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>
