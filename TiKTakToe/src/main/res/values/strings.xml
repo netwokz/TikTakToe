@@ -29,6 +29,7 @@
     <string name="total_games_played">Total games played:</string>
     <string name="total_games_won">Total games won:</string>
     <string name="total_games_lost">Total games lost:</string>
+    <string name="total_games_tied">Total games tied:</string>
 
     <string name="info">Info:</string>
     <string name="contact_heading">Contact Info</string>
