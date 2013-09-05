@@ -33,7 +33,7 @@ public class StatsFragment extends DialogFragment {
         mPrefs = PreferenceManager.getDefaultSharedPreferences(MyApp.getAppContext());
         mPrefsEditor = mPrefs.edit();
 
-
+        return null;
     }
 
     public void getStats() {
