@@ -40,8 +40,7 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
     SharedPreferences mPrefs;
     SharedPreferences.Editor mPrefsEditor;
 
-    Long mGameStartTime;
-    Long mTotalGameTime;
+    long mGameStartTime;
 
     String PLAYER_ONE = "Player 1:";
     String PLAYER_TWO = "Player 2:";
