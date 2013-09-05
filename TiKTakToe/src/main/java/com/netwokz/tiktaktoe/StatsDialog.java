@@ -12,7 +12,7 @@ import android.widget.TextView;
 /**
  * Created by Stephen on 9/4/13.
  */
-public class StatsFragment extends DialogFragment {
+public class StatsDialog extends DialogFragment {
 
     TextView mTotalPlayedView;
     TextView mTotalTimeView;
@@ -35,8 +35,8 @@ public class StatsFragment extends DialogFragment {
     private final String STAT_ALL_TIME_TIME_PLAYED = "all_time_time_played";
     private final String STAT_ALL_TIME_GAMES_TIE = "all_time_games_tie";
 
-    public static StatsFragment newInstance() {
-        StatsFragment fragment = new StatsFragment();
+    public static StatsDialog newInstance() {
+        StatsDialog fragment = new StatsDialog();
         return fragment;
     }
 

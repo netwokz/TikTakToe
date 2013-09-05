@@ -35,7 +35,8 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
     private boolean mPlayerOneTurn = true;
     private boolean mGameOver = false;
 
-    AfterGameDialog mDialog = null;
+    AfterGameDialog mAfterGameDialog = null;
+    StatsDialog mStatsDialog = null;
 
     SharedPreferences mPrefs;
     SharedPreferences.Editor mPrefsEditor;
@@ -275,6 +276,10 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.action_new_game:
+                mStatsDialog = StatsDialog.newInstance();
+                mStatsDialog.show(getFragmentManager(), "StatsDialog");
+                break;
             case R.id.action_sign_in:
                 if (!isSignedIn()) {
                     beginUserInitiatedSignIn();
@@ -319,19 +324,19 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
 
     @Override
     public void newGame() {
-        if (mDialog != null) {
+        if (mAfterGameDialog != null) {
             startGame(mIsOnePlayer);
-            mDialog.dismiss();
-            mDialog = null;
+            mAfterGameDialog.dismiss();
+            mAfterGameDialog = null;
         }
     }
 
     @Override
     public void returnToMainMenu() {
-        if (mDialog != null) {
+        if (mAfterGameDialog != null) {
             initiateStartScreen();
-            mDialog.dismiss();
-            mDialog = null;
+            mAfterGameDialog.dismiss();
+            mAfterGameDialog = null;
         }
     }
 
@@ -367,8 +372,8 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
                             updateStats(STAT_ALL_TIME_TIME_PLAYED, System.currentTimeMillis() - mGameStartTime);
                             updateStats(STAT_ALL_TIME_GAMES_PLAYED, 1l);
                             updateStats(STAT_ALL_TIME_GAMES_TIE, 1l);
-                            mDialog = AfterGameDialog.newInstance();
-                            mDialog.show(getFragmentManager(), "Dialog");
+                            mAfterGameDialog = AfterGameDialog.newInstance();
+                            mAfterGameDialog.show(getFragmentManager(), "AfterGameDialog");
                         } else if (winner == 2) {
                             mInfo.setText(R.string.result_human_win);
                             mPlayerOneCounter++;
@@ -378,8 +383,8 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
                             updateStats(STAT_ALL_TIME_TIME_PLAYED, System.currentTimeMillis() - mGameStartTime);
                             updateStats(STAT_ALL_TIME_GAMES_PLAYED, 1l);
                             updateStats(STAT_ALL_TIME_GAMES_WON, 1l);
-                            mDialog = AfterGameDialog.newInstance();
-                            mDialog.show(getFragmentManager(), "Dialog");
+                            mAfterGameDialog = AfterGameDialog.newInstance();
+                            mAfterGameDialog.show(getFragmentManager(), "AfterGameDialog");
                         } else {
                             mInfo.setText(R.string.result_android_win);
                             mAndroidCounter++;
@@ -389,8 +394,8 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
                             updateStats(STAT_ALL_TIME_TIME_PLAYED, System.currentTimeMillis() - mGameStartTime);
                             updateStats(STAT_ALL_TIME_GAMES_PLAYED, 1l);
                             updateStats(STAT_ALL_TIME_GAMES_LOST, 1l);
-                            mDialog = AfterGameDialog.newInstance();
-                            mDialog.show(getFragmentManager(), "Dialog");
+                            mAfterGameDialog = AfterGameDialog.newInstance();
+                            mAfterGameDialog.show(getFragmentManager(), "AfterGameDialog");
                         }
                     } else {
                         // Two Player Game
@@ -418,8 +423,8 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
                             updateStats(STAT_ALL_TIME_TIME_PLAYED, System.currentTimeMillis() - mGameStartTime);
                             updateStats(STAT_ALL_TIME_GAMES_PLAYED, 1l);
                             updateStats(STAT_ALL_TIME_GAMES_TIE, 1l);
-                            mDialog = AfterGameDialog.newInstance();
-                            mDialog.show(getFragmentManager(), "Dialog");
+                            mAfterGameDialog = AfterGameDialog.newInstance();
+                            mAfterGameDialog.show(getFragmentManager(), "AfterGameDialog");
                         } else if (winner == 2) {
                             mInfo.setText(R.string.result_player_one_wins);
                             mPlayerOneCounter++;
@@ -429,8 +434,8 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
                             updateStats(STAT_ALL_TIME_TIME_PLAYED, System.currentTimeMillis() - mGameStartTime);
                             updateStats(STAT_ALL_TIME_GAMES_PLAYED, 1l);
                             updateStats(STAT_ALL_TIME_GAMES_WON, 1l);
-                            mDialog = AfterGameDialog.newInstance();
-                            mDialog.show(getFragmentManager(), "Dialog");
+                            mAfterGameDialog = AfterGameDialog.newInstance();
+                            mAfterGameDialog.show(getFragmentManager(), "AfterGameDialog");
                         } else {
                             mInfo.setText(R.string.result_player_two_wins);
                             mPlayerTwoCounter++;
@@ -440,8 +445,8 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
                             updateStats(STAT_ALL_TIME_TIME_PLAYED, System.currentTimeMillis() - mGameStartTime);
                             updateStats(STAT_ALL_TIME_GAMES_PLAYED, 1l);
                             updateStats(STAT_ALL_TIME_GAMES_LOST, 1l);
-                            mDialog = AfterGameDialog.newInstance();
-                            mDialog.show(getFragmentManager(), "Dialog");
+                            mAfterGameDialog = AfterGameDialog.newInstance();
+                            mAfterGameDialog.show(getFragmentManager(), "AfterGameDialog");
                         }
                     }
                 }
