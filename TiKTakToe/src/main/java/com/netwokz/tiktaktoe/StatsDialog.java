@@ -48,11 +48,9 @@ public class StatsDialog extends DialogFragment {
 
         AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(getActivity());
         initializeViews(view);
-        mDialogBuilder.setView(view);
-
         getStats();
         updateStatViews();
-
+        mDialogBuilder.setView(view);
         return mDialogBuilder.create();
     }
 
