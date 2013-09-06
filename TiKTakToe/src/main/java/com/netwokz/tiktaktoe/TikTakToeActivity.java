@@ -205,6 +205,11 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
             tmp += value;
             mPrefsEditor.putLong(STAT_ALL_TIME_GAMES_LOST, tmp);
             mPrefsEditor.commit();
+        } else if (stat.equals(STAT_ALL_TIME_GAMES_TIE)) {
+            long tmp = mPrefs.getLong(STAT_ALL_TIME_GAMES_TIE, 0);
+            tmp += value;
+            mPrefsEditor.putLong(STAT_ALL_TIME_GAMES_TIE, tmp);
+            mPrefsEditor.commit();
         }
     }
 
