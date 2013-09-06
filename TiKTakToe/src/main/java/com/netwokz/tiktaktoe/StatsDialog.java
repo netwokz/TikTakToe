@@ -63,11 +63,11 @@ public class StatsDialog extends DialogFragment {
     }
 
     public void getStats() {
-        mGamesPlayed = mPrefs.getLong(STAT_ALL_TIME_GAMES_PLAYED, -1);
-        mGameTime = mPrefs.getLong(STAT_ALL_TIME_GAMES_WON, -1);
-        mGamesWon = mPrefs.getLong(STAT_ALL_TIME_GAMES_LOST, -1);
-        mGamesLost = mPrefs.getLong(STAT_ALL_TIME_TIME_PLAYED, -1);
-        mGamesTie = mPrefs.getLong(STAT_ALL_TIME_GAMES_TIE, -1);
+        mGamesPlayed = mPrefs.getLong(STAT_ALL_TIME_GAMES_PLAYED, 0);
+        mGameTime = mPrefs.getLong(STAT_ALL_TIME_GAMES_WON, 0);
+        mGamesWon = mPrefs.getLong(STAT_ALL_TIME_GAMES_LOST, 0);
+        mGamesLost = mPrefs.getLong(STAT_ALL_TIME_TIME_PLAYED, 0);
+        mGamesTie = mPrefs.getLong(STAT_ALL_TIME_GAMES_TIE, 0);
     }
 
     public void updateStatViews() {

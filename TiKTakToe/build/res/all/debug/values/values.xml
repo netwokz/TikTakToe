@@ -79,6 +79,9 @@
     <!-- From: file:/D:/android/android-studio/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/values/strings.xml -->
     <string name="contact_heading">Contact Info</string>
     <string name="contact_info"><b>Name:</b>        Steve Deane Jr.\n<b>Email:</b>        wildmechanic@gmail.com</string>
+    <string name="end_result_lose">I\'m sorry, you Lost@#8230</string>
+    <string name="end_result_tie">Awe, really?</string>
+    <string name="end_result_won">Congratulations, you Won!</string>
     <string name="first_human">You go first!</string>
     <string name="gamehelper_app_misconfigured">The application is incorrectly configured. Check that the package name
         and signing certificate match the client ID created in Developer Console. Also, if the application is not yet
@@ -124,8 +127,6 @@
     <string name="turn_player_one">Player One\'s Turn.</string>
     <string name="turn_player_two">Player Two\'s Turn.</string>
     <string name="undo_move">Undo!</string>
-    <string name="you_lost">I\'m sorry, you Lost@#8230</string>
-    <string name="you_won">Congratulations, you Won!</string>
     <!-- From: file:/D:/android/android-studio/AndroidStudioProjects/TiKTakToeProject/TiKTakToe/src/main/res/values/styles.xml -->
     <style name="AppBaseTheme" parent="android:Theme">
         <!--

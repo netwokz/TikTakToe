@@ -20,8 +20,9 @@
     <string name="player_one">Player One:</string>
     <string name="player_two">Player Two:</string>
     <string name="ties">Ties:</string>
-    <string name="you_won">Congratulations, you Won!</string>
-    <string name="you_lost">I\'m sorry, you Lost@#8230</string>
+    <string name="end_result_won">Congratulations, you Won!</string>
+    <string name="end_result_lose">I\'m sorry, you Lost@#8230</string>
+    <string name="end_result_tie">Awe, really?</string>
     <string name="play_again">Play Again?</string>
     <string name="main_menu">Main Menu</string>
 

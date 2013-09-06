@@ -7,6 +7,7 @@ import android.app.DialogFragment;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * Created by Stephen on 9/4/13.
@@ -38,9 +39,14 @@ public class AfterGameDialog extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        Bundle mBundle = this.getArguments();
+        int RESULT = -1;
+        if (mBundle != null) {
+            RESULT = mBundle.getInt("RESULT");
+        }
         AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(getActivity());
         View view = getActivity().getLayoutInflater().inflate(R.layout.after_game_dialog, null);
-
+        TextView resultLabel = (TextView) view.findViewById(R.id.result_label);
         Button playAgain = (Button) view.findViewById(R.id.btn_play_again);
         Button mainMenu = (Button) view.findViewById(R.id.btn_main_menu);
 
@@ -57,6 +63,19 @@ public class AfterGameDialog extends DialogFragment {
             }
         });
 
+        switch (RESULT) {
+            case -1:
+                break;
+            case 0:
+                resultLabel.setText(getResources().getString(R.string.end_result_won));
+                break;
+            case 1:
+                resultLabel.setText(getResources().getString(R.string.end_result_lose));
+                break;
+            case 2:
+                resultLabel.setText(getResources().getString(R.string.end_result_tie));
+                break;
+        }
         mDialogBuilder.setView(view);
         return mDialogBuilder.create();
     }

@@ -30,6 +30,10 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
     private int mTieCounter = 0;
     private int mAndroidCounter = 0;
 
+    private final int RESULT_WIN = 0;
+    private final int RESULT_LOSE = 1;
+    private final int RESULT_TIE = 2;
+
     private boolean mPlayerOneFirst = true;
     private boolean mIsOnePlayer = false;
     private boolean mPlayerOneTurn = true;
@@ -183,32 +187,24 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
     private void updateStats(String stat, Long value) {
         if (stat.equals(STAT_ALL_TIME_GAMES_PLAYED)) {
             long tmp = mPrefs.getLong(STAT_ALL_TIME_GAMES_PLAYED, 0);
-            if (tmp > 0) {
-                tmp += value;
-                mPrefsEditor.putLong(STAT_ALL_TIME_GAMES_PLAYED, tmp);
-                mPrefsEditor.commit();
-            }
+            tmp += value;
+            mPrefsEditor.putLong(STAT_ALL_TIME_GAMES_PLAYED, tmp);
+            mPrefsEditor.commit();
         } else if (stat.equals(STAT_ALL_TIME_TIME_PLAYED)) {
             long tmp = mPrefs.getLong(STAT_ALL_TIME_TIME_PLAYED, 0);
-            if (tmp > 0) {
-                tmp += value;
-                mPrefsEditor.putLong(STAT_ALL_TIME_TIME_PLAYED, tmp);
-                mPrefsEditor.commit();
-            }
+            tmp += value;
+            mPrefsEditor.putLong(STAT_ALL_TIME_TIME_PLAYED, tmp);
+            mPrefsEditor.commit();
         } else if (stat.equals(STAT_ALL_TIME_GAMES_WON)) {
             long tmp = mPrefs.getLong(STAT_ALL_TIME_GAMES_WON, 0);
-            if (tmp > 0) {
-                tmp += value;
-                mPrefsEditor.putLong(STAT_ALL_TIME_GAMES_WON, tmp);
-                mPrefsEditor.commit();
-            }
+            tmp += value;
+            mPrefsEditor.putLong(STAT_ALL_TIME_GAMES_WON, tmp);
+            mPrefsEditor.commit();
         } else if (stat.equals(STAT_ALL_TIME_GAMES_LOST)) {
             long tmp = mPrefs.getLong(STAT_ALL_TIME_GAMES_LOST, 0);
-            if (tmp > 0) {
-                tmp += value;
-                mPrefsEditor.putLong(STAT_ALL_TIME_GAMES_LOST, tmp);
-                mPrefsEditor.commit();
-            }
+            tmp += value;
+            mPrefsEditor.putLong(STAT_ALL_TIME_GAMES_LOST, tmp);
+            mPrefsEditor.commit();
         }
     }
 
@@ -373,6 +369,9 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
                             updateStats(STAT_ALL_TIME_GAMES_PLAYED, 1l);
                             updateStats(STAT_ALL_TIME_GAMES_TIE, 1l);
                             mAfterGameDialog = AfterGameDialog.newInstance();
+                            Bundle mBundle = new Bundle();
+                            mBundle.putInt("RESULT", RESULT_TIE);
+                            mAfterGameDialog.setArguments(mBundle);
                             mAfterGameDialog.show(getFragmentManager(), "AfterGameDialog");
                         } else if (winner == 2) {
                             mInfo.setText(R.string.result_human_win);
@@ -384,6 +383,9 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
                             updateStats(STAT_ALL_TIME_GAMES_PLAYED, 1l);
                             updateStats(STAT_ALL_TIME_GAMES_WON, 1l);
                             mAfterGameDialog = AfterGameDialog.newInstance();
+                            Bundle mBundle = new Bundle();
+                            mBundle.putInt("RESULT", RESULT_WIN);
+                            mAfterGameDialog.setArguments(mBundle);
                             mAfterGameDialog.show(getFragmentManager(), "AfterGameDialog");
                         } else {
                             mInfo.setText(R.string.result_android_win);
@@ -395,6 +397,9 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
                             updateStats(STAT_ALL_TIME_GAMES_PLAYED, 1l);
                             updateStats(STAT_ALL_TIME_GAMES_LOST, 1l);
                             mAfterGameDialog = AfterGameDialog.newInstance();
+                            Bundle mBundle = new Bundle();
+                            mBundle.putInt("RESULT", RESULT_LOSE);
+                            mAfterGameDialog.setArguments(mBundle);
                             mAfterGameDialog.show(getFragmentManager(), "AfterGameDialog");
                         }
                     } else {
@@ -424,6 +429,9 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
                             updateStats(STAT_ALL_TIME_GAMES_PLAYED, 1l);
                             updateStats(STAT_ALL_TIME_GAMES_TIE, 1l);
                             mAfterGameDialog = AfterGameDialog.newInstance();
+                            Bundle mBundle = new Bundle();
+                            mBundle.putInt("RESULT", RESULT_TIE);
+                            mAfterGameDialog.setArguments(mBundle);
                             mAfterGameDialog.show(getFragmentManager(), "AfterGameDialog");
                         } else if (winner == 2) {
                             mInfo.setText(R.string.result_player_one_wins);
@@ -435,6 +443,9 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
                             updateStats(STAT_ALL_TIME_GAMES_PLAYED, 1l);
                             updateStats(STAT_ALL_TIME_GAMES_WON, 1l);
                             mAfterGameDialog = AfterGameDialog.newInstance();
+                            Bundle mBundle = new Bundle();
+                            mBundle.putInt("RESULT", RESULT_WIN);
+                            mAfterGameDialog.setArguments(mBundle);
                             mAfterGameDialog.show(getFragmentManager(), "AfterGameDialog");
                         } else {
                             mInfo.setText(R.string.result_player_two_wins);
@@ -446,6 +457,9 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
                             updateStats(STAT_ALL_TIME_GAMES_PLAYED, 1l);
                             updateStats(STAT_ALL_TIME_GAMES_LOST, 1l);
                             mAfterGameDialog = AfterGameDialog.newInstance();
+                            Bundle mBundle = new Bundle();
+                            mBundle.putInt("RESULT", RESULT_LOSE);
+                            mAfterGameDialog.setArguments(mBundle);
                             mAfterGameDialog.show(getFragmentManager(), "AfterGameDialog");
                         }
                     }
