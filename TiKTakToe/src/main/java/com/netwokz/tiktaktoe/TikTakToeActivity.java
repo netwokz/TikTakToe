@@ -138,10 +138,7 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
     }
 
     public boolean isGameInProgress() {
-        if (mPrefs.getString(GAME_IN_PROGRESS_PREF, "false").equals("true")) {
-            return true;
-        }
-        return false;
+        return mPrefs.getString(GAME_IN_PROGRESS_PREF, "false").equals("true");
     }
 
     private void startNewGame(boolean onePlayer) {
@@ -182,6 +179,16 @@ public class TikTakToeActivity extends BaseGameActivity implements MainMenuScree
         mGameStartTime = System.currentTimeMillis();
 
         mGameOver = false;
+    }
+
+    private void updateStat() {
+        long gamesTemp;
+        long timeTemp;
+        long wonTemp;
+        long loseTemp;
+        long tieTemp;
+
+
     }
 
     private void updateStats(String stat, Long value) {
